@@ -1,0 +1,50 @@
+<!-- RM 11:36 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Numbers</title>
+
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+
+        input{
+            font: normal 15pt Arial;
+            width: 100px;
+        }
+
+        div#result {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Adding Numbers</h1>
+
+    <input type="number" name="firstNumberInput" id="firstNumberInput"> +
+    <input type="number" name="secondNumberInput" id="secondNumberInput">
+
+    <input type="button" value="Sum" onclick="sum()">
+    <div id="result">Result: </div>
+
+
+    <script>
+        function sum(){
+            var r = window.document.getElementById('result')
+
+            var n1 = Number(window.document.getElementById('firstNumberInput').value)
+            var n2 = Number(window.document.getElementById('secondNumberInput').value)
+            var s = n1 + n2
+
+            r.innerHTML = `The sum between ${n1} and ${n2} is ${s}.`
+        }
+    </script>
+</body>
+</html>
+
+<!-- RM 11:36 -->
