@@ -1,0 +1,38 @@
+<!-- RM 11:36 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Situation</title>
+</head>
+<body>
+    <h1>Welcome to Rio de Janeiro!</h1>
+
+    <p>What country were you born in?</p>
+    <input type="text" name="country" id="country">
+    <input type="button" value="send" onclick="Check()">
+
+    <div id="result">
+
+    </div>
+
+    <script>
+        function Check() {
+            var coun = window.document.querySelector('input#country').value.toLowerCase()
+            var res = window.document.querySelector('div#result')
+
+            if(coun == 'brazil') {
+                res.innerHTML = `
+                    <p>You're brazilian too!</p>
+                `
+            } else {
+                res.innerHTML = `<p>You're foreign! Welcome to our country!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- RM 11:36 -->

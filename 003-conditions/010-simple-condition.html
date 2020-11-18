@@ -1,0 +1,44 @@
+<!-- RM 11:36 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Department</title>
+</head>
+<body>
+    <h1>Traffic Tickets System</h1>
+
+    Car Speed: <input type="number" name="velocity" id="velocity"> Km/h
+    <input type="button" value="Check" onclick="Calculate()">
+
+    <div id="result">
+
+    </div>
+    <script>
+        function Calculate() {
+            var vel = Number(window.document.querySelector("input#velocity").value)
+            var res = window.document.querySelector("div#result")
+
+
+            // return in #result
+            res.innerHTML = `
+                <p>Your current speed's <strong>${vel} Km/h</strong></p>
+            `
+
+            if (vel > 60) {
+                res.innerHTML += `
+                    You'll receive a <strong>traffic ticket</strong> because you've exceeded the speed limit
+                `
+            }
+
+            res.innerHTML += `
+                <p>Alway wear your seat belt!</p>
+            `
+        }
+    </script>
+</body>
+</html>
+
+<!-- RM 11:36 -->
