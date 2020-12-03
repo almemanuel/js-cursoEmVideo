@@ -1,0 +1,44 @@
+<!-- RM 11:36 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Checker</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Born year: <input type="number" name="year" id="year" min="0">
+            </p>
+            <p>
+                Gender: <input type="radio" name="gender" id="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </p>
+            <p>
+                <input type="button" value="Send" onclick="check()">
+            </p>
+        </div>
+
+        <div id="res">
+            Fill in the fields above to see the result
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- RM 11:36 -->
