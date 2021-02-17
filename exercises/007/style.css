@@ -19,6 +19,18 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.281);
 }
 
+input#number:out-of-range{
+    border-color:red;
+}
+
+input#number:in-range{
+    border-color: green;
+}
+
+input[type="button"]:hover {
+    cursor:pointer;
+}
+
 select#list {
     width: 150px;
 }
